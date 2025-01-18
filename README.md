@@ -36,7 +36,6 @@ Ensure the database file `url_shortener.db` exists in the project directory. The
 ## Running the Application
 Start the FastAPI application using the following command:
 
-    ```bash
     uvicorn main:app --reload 
     
 Access the API at http://127.0.0.1:8000.
@@ -94,15 +93,15 @@ Access the API at http://127.0.0.1:8000.
 ## Example cURL Command
 
 ### Shorten a URL:
-curl --location 'http://127.0.0.1:8000/shorten' \
---header 'Content-Type: application/json' \
---data '{"original_url": "https://www.interviewbit.com/", "expiry_hours": 48}'
+      curl --location 'http://127.0.0.1:8000/shorten' \
+      --header 'Content-Type: application/json' \
+      --data '{"original_url": "https://www.interviewbit.com/", "expiry_hours": 48}'
 
 ### Redirect to Original URL:
-curl --location 'http://127.0.0.1:8000/9aa1c2/'
+      curl --location 'http://127.0.0.1:8000/9aa1c2/'
 
 ### Analytics for Shortened URL:
-curl --location 'http://127.0.0.1:8000/analytics/9aa1c2/'
+      curl --location 'http://127.0.0.1:8000/analytics/9aa1c2/'
 
 
 
