@@ -1,11 +1,10 @@
 # URL Shortener API
 
 ## Overview
-The URL Shortener API allows users to shorten long URLs and manage them with optional password protection. It provides endpoints for creating short URLs, redirecting to original URLs, and viewing analytics with access logs.
+The URL Shortener API allows users to shorten long URLs and manage them. It provides endpoints for creating short URLs, redirecting to original URLs, and viewing analytics with access logs.
 
 ## Features
 - Shorten long URLs into shorter, more manageable links.
-- Optionally protect shortened URLs with a password.
 - Track access counts and view analytics for each shortened URL.
 
 ## Getting Started
